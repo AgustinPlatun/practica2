@@ -7,10 +7,10 @@ def maximum(players):
             aux =(player[0],player[1])
     return aux
 
-#Calcula la efectividad de l@s jugador@s
-def effectiveness(data):
-    aux = []
+#Calcula el total de goles
+def average_matches(data):
+    aux = 0
     for player in data:
-        aux.append((player[0],(player[1] * 1.5) + (player[2] * 1.25) + player[3]))
+        aux += player[1]
     return aux
 
